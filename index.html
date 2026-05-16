@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cris &amp; Miki — Nuestra boda</title>
+  <meta name="description" content="Nos casamos. Toda la información sobre nuestro gran día." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="#inicio" class="nav__brand">Cris &amp; Miki</a>
+    <ul class="nav__links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#evento">Evento</a></li>
+      <li><a href="#rsvp">Confirmar</a></li>
+      <li><a href="#informacion">Información</a></li>
+    </ul>
+  </nav>
+
+  <header id="inicio" class="hero">
+    <div class="hero__image" role="img" aria-label="Foto de la pareja"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Nos casamos</p>
+      <h1 class="hero__names">
+        <span>Cris</span>
+        <span class="hero__amp">&amp;</span>
+        <span>Miki</span>
+      </h1>
+      <p class="hero__date">05 · 09 · 2026</p>
+      <p class="hero__location">Madrid, España</p>
+      <div class="hero__countdown" id="countdown" aria-live="polite"></div>
+    </div>
+  </header>
+
+  <section class="quote">
+    <p>
+      <em>“No podemos hacer grandes cosas,<br />sólo cosas pequeñas con gran amor.”</em>
+    </p>
+    <p class="quote__author">— Santa Teresa de Calcuta</p>
+  </section>
+
+  <section id="evento" class="event">
+    <div class="section__header">
+      <p class="section__eyebrow">El día</p>
+      <h2 class="section__title">Detalles del evento</h2>
+    </div>
+
+    <div class="event__grid">
+      <article class="event__card">
+        <p class="event__time">17:30 h</p>
+        <h3 class="event__title">Ceremonia</h3>
+        <p class="event__place">Parroquia Santa María Magdalena</p>
+        <p class="event__address">Av. de la Iglesia, 16, 28223 Húmera, Madrid</p>
+        <a class="event__map" href="https://www.google.com/maps/place/Parroquia+de+Santa+María+Magdalena/@40.4295083,-3.7874683,17.26z/data=!3m1!5s0xd41863530ca9c51:0xb6092f9d782d9f44!4m6!3m5!1s0xd418635253d65a3:0xec3a5ddd0bbe7fe5!8m2!3d40.4290207!4d-3.7846016!16s%2Fg%2F1z44b4hy1!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Ver en mapa</a>
+      </article>
+
+      <div class="event__divider" aria-hidden="true"></div>
+
+      <article class="event__card">
+        <p class="event__time">19:30 h</p>
+        <h3 class="event__title">Banquete</h3>
+        <p class="event__place">Jardines de NOC</p>
+        <p class="event__address">C. Canto Gordo, 28400 Collado Villalba, Madrid</p>
+        <a class="event__map" href="https://www.google.com/maps/place/Jardines+de+NOC/@40.6386133,-3.9883072,17z/data=!3m1!4b1!4m6!3m5!1s0xd4175001f29fcef:0x3d38762edb06d648!8m2!3d40.6386133!4d-3.9857323!16s%2Fg%2F11y3k9k_mm!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDUxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Ver en mapa</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="rsvp" class="rsvp">
+    <div class="section__header">
+      <p class="section__eyebrow">Tu asistencia</p>
+      <h2 class="section__title">Confirma tu presencia</h2>
+    </div>
+    <p class="rsvp__text">
+      Nos hará muchísima ilusión contar contigo.<br />
+      Por&nbsp;favor, confirma tu asistencia antes del <strong>1&nbsp;de&nbsp;Julio</strong>.
+    </p>
+    <a class="rsvp__button" href="https://forms.gle/NUWVDQUEnBNd3ojy7" target="_blank" rel="noopener">
+      Confirmar asistencia
+    </a>
+  </section>
+
+  <section id="informacion" class="info">
+    <div class="section__header">
+      <p class="section__eyebrow">Para saber más</p>
+      <h2 class="section__title">Información</h2>
+    </div>
+
+    <div class="info__grid">
+      <article class="info__card">
+        <h3 class="info__title">Autobuses</h3>
+        <p class="info__text">
+          Pondremos a vuestra disposición un servicio de autobús para
+          facilitar el desplazamiento durante el día.
+        </p>
+        <div class="info__schedule">
+          <div class="info__schedule-row">
+            <p class="info__schedule-label">Al finalizar la ceremonia</p>
+            <p class="info__schedule-detail">Parroquia Santa María Magdalena → Jardines de NOC</p>
+          </div>
+          <div class="info__schedule-row">
+            <p class="info__schedule-label">Vuelta</p>
+            <p class="info__schedule-detail">23:30 h · Jardines de NOC → Madrid (parada por confirmar)</p>
+            <p class="info__schedule-detail">03:30 h · Jardines de NOC → Madrid (parada por confirmar)</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="info__divider" aria-hidden="true"></div>
+
+      <article class="info__card">
+        <h3 class="info__title">Regalo</h3>
+        <p class="info__text">
+          Para nosotros el mayor regalo es poder compartir este día con todos vosotros, pero si queréis y podéis ayudarnos en este camino que comenzamos juntos, podéis hacerlo aquí: 
+        </p>
+        <div class="gift__iban">
+          <p class="gift__iban-label">IBAN</p>
+          <p class="gift__iban-number" id="iban">ES1801826387080201657494</p>
+          <button
+            class="gift__copy"
+            type="button"
+            data-copy="ES1801826387080201657494"
+            aria-label="Copiar IBAN al portapapeles"
+          >
+            Copiar
+          </button>
+        </div>
+        <p class="gift__holder">
+          <span class="gift__iban-label">Titular</span>
+          <span class="gift__holder-name">Miguel Márquez González</span>
+        </p>
+      </article>
+    </div>
+
+    <p class="info__signoff">Gracias de corazón.</p>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__names">Cris &amp; Miki</p>
+    <p class="footer__date">05 · 09 · 2026</p>
+    <p class="footer__small">Gracias por acompañarnos.</p>
+  </footer>
+
+  <script>
+    // Cuenta atrás. Cambia la fecha por la de la boda (formato ISO).
+    const weddingDate = new Date('2026-09-12T17:00:00').getTime();
+    const el = document.getElementById('countdown');
+
+    function tick() {
+      const now = Date.now();
+      const diff = weddingDate - now;
+      if (diff <= 0) {
+        el.textContent = '¡Hoy es el día!';
+        return;
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const mins = Math.floor((diff / (1000 * 60)) % 60);
+      el.innerHTML = `
+        <span><strong>${days}</strong><small>días</small></span>
+        <span><strong>${hours}</strong><small>horas</small></span>
+        <span><strong>${mins}</strong><small>minutos</small></span>
+      `;
+    }
+    tick();
+    setInterval(tick, 60_000);
+
+    // Copiar IBAN al portapapeles
+    const copyBtn = document.querySelector('.gift__copy');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', async () => {
+        const iban = copyBtn.dataset.copy;
+        try {
+          await navigator.clipboard.writeText(iban);
+          const original = copyBtn.textContent;
+          copyBtn.textContent = 'Copiado';
+          copyBtn.classList.add('copied');
+          setTimeout(() => {
+            copyBtn.textContent = original;
+            copyBtn.classList.remove('copied');
+          }, 2000);
+        } catch (e) {
+          console.error('No se pudo copiar el IBAN', e);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
